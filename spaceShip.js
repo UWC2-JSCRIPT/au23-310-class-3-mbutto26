@@ -20,3 +20,4 @@ const lightningMcQueen = new Spaceship("LightningMcQueen", "198mph");
 // and call accelerate on both of them.
 
 console.log(`starLord${starLord} moving to ${topSpeed}`);
+console.log(`lightningMcQueen${LightningMcQueen} moving to ${topSpeed}`);

@@ -51,33 +51,3 @@ while (player1.health >= 1 && player2.health >= 1 && preventInfiniteLoop > 0) {
 }
 const eliminatedPlayer = player1.health <= 0 ? player1 : player2;
 console.log(`${eliminatedPlayer.name} has been eliminated!`);
-
-const logReceipt = (...items) => {
-  let total = 0;
-  items.forEach((item) => {
-    total += item.price;
-    console.log(item.descr);
-  });
-  console.log(total);
-};
-const object1 = { description: "Burger", price: 11.99 };
-const object2 = { description: "Fries", price: 1.99 };
-const object3 = { description: "Fish", price: 21.99 };
-const object4 = { description: "Falafel", price: 10.99 };
-logReceipt(object1, object4, object2);
-
-class Spaceship {
-  constructor(name, topSpeed) {
-    this.name = name;
-    this.topSpeed = topSpeed;
-  }
-  accelerate() {
-    const { name, topSpeed } = this;
-    console.log(`${name}${topSpeed}`);
-  }
-}
-
-const starLord = new Spaceship("StarLord", "140,000mph");
-const lightningMcQueen = new Spaceship("LightningMcQueen", "198mph");
-
-console.log(`starLord${starLord} moving to ${topSpeed}`);

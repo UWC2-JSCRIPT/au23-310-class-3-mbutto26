@@ -5,6 +5,36 @@
 // '206 333 4444'
 // Returns true if valid, false if not valid
 
+function testPhoneNumber(phoneNumbers) {
+  phoneNumbers = phoneNumbers.join("");
+  return (
+    "(" +
+    phoneNumbers.substring(0, 3) +
+    ") " +
+    phoneNumbers.substring(3, 6) +
+    "-" +
+    phoneNumbers.substring(6)
+  );
+}
+
+function testPhoneNumber(phoneNumbers) {
+  phoneNumbers = phoneNumbers.join("");
+  return (
+    phoneNumbers.substring(0, 3) +
+    "-" +
+    phoneNumbers.substring(3, 6) +
+    phoneNumbers.substring(6)
+  );
+}
+function testPhoneNumber(phoneNmbers) {
+  phoneNumbers = phoneNumbers.join("");
+  return (
+    phoneNumbers.substring(0, 3) +
+    phoneNumbers.substring(3, 6) +
+    phoneNumbers.substring(6)
+  );
+}
+
 // Explanation of RegExp
 // ^      start of line
 // \(     optional start parenthesis
@@ -26,7 +56,9 @@ console.log(testPhoneNumber("(206) 33-4444")); // should return false, missing a
 // and run the exec method to capture the area code and remaining part of
 // the phone number.
 // Returns an object in the format {areaCode, phoneNumber}
-
+function parsePhoneNumber(phoneNumber) {
+  return areaCode, phoneNumber;
+}
 // Check parsePhoneNumber
 console.log(parsePhoneNumber("206-333-4444"));
 // returns {areaCode: '206', phoneNumber: '3334444'}
