@@ -9,13 +9,8 @@ const logReceipt = (...items) => {
     total = total + item.price;
     console.log(`${item.descr} - $${item.price.toFixed(2)}`);
   });
-  console.log(`Total is ${total}`);
+  console.log(`Total - ${total}`);
 };
-/*const object1 = { description: "Burger", price: 11.99 };
-const object2 = { description: "Fries", price: 1.99 };
-const object3 = { description: "Fish", price: 21.99 };
-const object4 = { description: "Falafel", price: 10.99 };
-logReceipt(object1, object2, object3, object4);*/
 
 // Check
 logReceipt(
