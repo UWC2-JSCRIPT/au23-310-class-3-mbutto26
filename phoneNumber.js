@@ -6,33 +6,7 @@
 // Returns true if valid, false if not valid
 
 function testPhoneNumber(phoneNumbers) {
-  phoneNumbers = phoneNumbers.join("");
-  return (
-    "(" +
-    phoneNumbers.substring(0, 3) +
-    ") " +
-    phoneNumbers.substring(3, 6) +
-    "-" +
-    phoneNumbers.substring(6)
-  );
-}
-
-function testPhoneNumber(phoneNumbers) {
-  phoneNumbers = phoneNumbers.join("");
-  return (
-    phoneNumbers.substring(0, 3) +
-    "-" +
-    phoneNumbers.substring(3, 6) +
-    phoneNumbers.substring(6)
-  );
-}
-function testPhoneNumber(phoneNmbers) {
-  phoneNumbers = phoneNumbers.join("");
-  return (
-    phoneNumbers.substring(0, 3) +
-    phoneNumbers.substring(3, 6) +
-    phoneNumbers.substring(6)
-  );
+  /^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}$/.test(phoneNumbers);
 }
 
 // Explanation of RegExp
