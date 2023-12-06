@@ -30,8 +30,17 @@ console.log(testPhoneNumber("(206) 33-4444")); // should return false, missing a
 // and run the exec method to capture the area code and remaining part of
 // the phone number.
 // Returns an object in the format {areaCode, phoneNumber}
-function parsePhoneNumber(phoneNumber) {
-  return areaCode, phoneNumber;
+function parsePhoneNumber(phoneNumbers) {
+  const phoneNumberParts = /^\(?(\d{3})[\)\s-]+(\d{3})[\s-](\d{4})$/.exec(
+    phoneNumbers
+  );
+
+  const [, areaCode, first3, last4] = phoneNumberParts;
+  const phoneNumberObj = {
+    areaCode,
+    phoneNumbers: `${first3}${last4}`,
+  };
+  return phoneNumberObj;
 }
 // Check parsePhoneNumber
 console.log(parsePhoneNumber("206-333-4444"));
