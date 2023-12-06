@@ -5,17 +5,17 @@
 
 const logReceipt = (...items) => {
   let total = 0;
-  items.forEach((item) => {
-    total += item.price;
-    console.log(item.descr);
+  items.forEach(function (item) {
+    total = total + item.price;
+    console.log(`${item.descr} - $${item.price.toFixed(2)}`);
   });
-  console.log(total);
+  console.log(`Total is ${total}`);
 };
-const object1 = { description: "Burger", price: 11.99 };
+/*const object1 = { description: "Burger", price: 11.99 };
 const object2 = { description: "Fries", price: 1.99 };
 const object3 = { description: "Fish", price: 21.99 };
 const object4 = { description: "Falafel", price: 10.99 };
-logReceipt(object1, object2, object3, object4);
+logReceipt(object1, object2, object3, object4);*/
 
 // Check
 logReceipt(
