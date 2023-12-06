@@ -9,11 +9,11 @@ class Spaceship {
   }
   accelerate() {
     const { name, topSpeed } = this;
-    console.log(`${name}${topSpeed}`);
+    console.log(`${name} moving to ${topSpeed}`);
   }
 }
 
-const starLord = new Spaceship("StarLord", "140,000mph");
+const starLord = new Spaceship("StarLord", "Light Speed");
 const lightningMcQueen = new Spaceship("LightningMcQueen", "198mph");
 
 // 2. Call the constructor with a couple ships,
